@@ -1,0 +1,129 @@
+{
+  "housesAvaliableForRent": [
+    {
+      "id": 0,
+      "altImg": "Современная классика",
+      "houseName": "Современная классика",
+      "houseArea": "Площадь — 186 м",
+      "houseRooms": "5",
+      "houseBedrooms": "3",
+      "houseFloors": "2"
+    },
+    {
+      "id": 1,
+      "altImg": "Дом на берегу озера",
+      "houseName": "Дом на берегу озера",
+      "houseArea": "Площадь — 242 м",
+      "houseRooms": "7",
+      "houseBedrooms": "4",
+      "houseFloors": "2"
+    },
+    {
+      "id": 2,
+      "altImg": "Особняк в лесу",
+      "houseName": "Особняк в лесу",
+      "houseArea": "Площадь — 406 м",
+      "houseRooms": "12",
+      "houseBedrooms": "8",
+      "houseFloors": "2"
+    },
+    {
+      "id": 3,
+      "altImg": "Домик на дереве",
+      "houseName": "Домик на дереве",
+      "houseArea": "Площадь — 75 м",
+      "houseRooms": "3",
+      "houseBedrooms": "2",
+      "houseFloors": "1"
+    }
+  ],
+  "requests": [
+    {
+      "title": "Mrs",
+      "first-name": "Test",
+      "last-name": "Test",
+      "e-mail": "test@test.com",
+      "phone": "13561651616161616",
+      "agreement": "on",
+      "subscribe": "on",
+      "id": 1
+    },
+    {
+      "title": "Mrs",
+      "first-name": "Test2",
+      "last-name": "Test2",
+      "e-mail": "test2@test2.com",
+      "phone": "156156156142214521451",
+      "agreement": "on",
+      "subscribe": "on",
+      "id": 2
+    },
+    {
+      "title": "Mrs",
+      "first-name": "Test3",
+      "last-name": "Test3",
+      "e-mail": "test3@test3.com",
+      "phone": "235442352356262",
+      "agreement": "on",
+      "subscribe": "on",
+      "id": 3
+    },
+    {
+      "title": "Mr",
+      "first-name": "Test22",
+      "last-name": "Test22",
+      "e-mail": "test@tes2322222.lv",
+      "phone": "3141414141451414",
+      "agreement": "on",
+      "subscribe": "on",
+      "id": 4
+    },
+    {
+      "title": "Mr",
+      "first-name": "Test22",
+      "last-name": "Test22",
+      "e-mail": "test@tes2322222.lv",
+      "phone": "3141414141451414",
+      "agreement": "on",
+      "subscribe": "on",
+      "id": 5
+    },
+    {
+      "title": "Mrs",
+      "first-name": "Test",
+      "last-name": "Test",
+      "e-mail": "Test@test2.test",
+      "phone": "Test",
+      "agreement": "on",
+      "subscribe": "on",
+      "id": 6
+    }
+  ],
+  "requests-modal": [
+    {
+      "name": "Test-modal",
+      "phone": "1515151515151",
+      "id": 1
+    },
+    {
+      "name": "Test-modal2",
+      "phone": "6516161",
+      "id": 2
+    },
+    {
+      "name": "Test3-modal",
+      "phone": "1236316126316",
+      "id": 3
+    },
+    {
+      "name": "TEST@@@@@222222",
+      "phone": "1241251356123123",
+      "id": 4
+    },
+    {
+      "name": "TEST@@@@@222222",
+      "phone": "3141414141451414",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+$footerBackgroundColor: #F2F8FB
+  
+.page-footer
+  grid-area: footer
+  background-color: $footerBackgroundColor
+  font-family: 'Montserrat'
+
+  &__content
+    display: grid
+    grid-template-columns: 1fr auto auto
+
+    &__logo
+      width: 97px
+      height: 30px
+      margin-top: 30px
+      margin-bottom: 40px
+      box-sizing: border-box
+
+    &__footer-nav
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+
+      li
+        list-style: none
+      
+      a
+        text-decoration: none
+        color: #06a9b3
+        font-size: 16px
+        line-height: 20px
+        margin-right: 64px
+
+      li:last-of-type a
+        margin-right: 0
+
+      a:hover
+        text-decoration: underline
+
+    &__copyright
+      font-weight: 400
+      color: #333
+      font-size: 16px
+      line-height: 20px
+      color: rgba(51,51,51, 0.3)
+      margin-top: 40px
+      margin-bottom: 40px
+      margin-left: 265px
+
+    &__page-link
+      text-decoration: none
+      color: #06A9B3
+      font-size: 16px
+      line-height: 20px
+
+      &:hover
+        text-decoration: underline

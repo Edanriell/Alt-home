@@ -1,0 +1,53 @@
+@import "~normalize.css"
+@import "montserrat"
+
+@import 'page-animations'
+@import 'page-footer'
+@import 'page-header'
+@import 'page-main.sass'
+@import 'page-main__catalog'
+@import 'page-main__feedback'
+@import 'page-main__overwiev'
+@import 'page-main__place'
+@import 'page-modal'
+@import 'page-error'
+
+$mainFont: 'Montserrat'
+$mainFontColor: #333333
+$containerWidth: 1380px
+
+html
+  scroll-behavior: smooth
+
+body
+  font-family: $mainFont
+  font-size: 16px
+  font-style: normal
+  font-weight: 300
+  line-height: 32px
+  color: $mainFontColor
+  min-width: 1440px
+
+.visually-hidden
+  position: absolute
+  clip: rect(1px, 1px, 1px, 1px)
+  padding: 0
+  border: 0
+  height: 1px
+  width: 1px
+  overflow: hidden
+
+.container
+  width: $containerWidth
+  margin: 0 auto
+  padding-left: 30px
+  padding-right: 30px
+
+.page
+  display: grid
+  grid-template-areas: "header" "main" "footer"
+  grid-template-rows: auto 1fr auto
+  min-height: 100vh
+
+.closeSearch:hover
+  background-color: #06A9B3 !important

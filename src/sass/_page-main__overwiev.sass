@@ -1,0 +1,193 @@
+$overwievBackgroundColor: #f2f8fb
+
+.page-main__overwiev
+  padding-bottom: 100px
+  background-color: $overwievBackgroundColor
+  padding: 0
+  margin: 0
+    
+  &__content
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 1fr
+    grid-gap: 24px
+    position: relative
+    height: 596px
+    background-color: $overwievBackgroundColor
+    margin: 0
+    padding: 0
+
+    &__offer
+      z-index: 2
+      grid-area: 1 / 2 / 1 / 8
+      display: grid
+      grid-template-columns: repeat(6, 1fr)
+      grid-template-rows: repeat(5, auto)
+      column-gap: 24px
+      padding: 0
+      margin: 0
+      position: relative
+    
+      &__header
+        z-index: 2
+        grid-area: 2 / 1 / 2 / -1
+        padding: 0
+        margin: 0
+        font-family: 'Montserrat-Bold'
+        font-size: 44px
+        line-height: 62px
+        margin-bottom: 12px
+
+      &__place
+        z-index: 2
+        grid-area: 1 / 1 / 1 / -1
+        padding: 0
+        margin: 0
+        margin: 80px 0 8px 0
+        font-family: 'Montserrat'
+        line-height: 20px
+        opacity: 0.3
+
+      &__description
+        z-index: 2
+        grid-area: 3 / 1 / 3 / -1
+        padding: 0
+        margin: 0
+        margin-bottom: 40px
+        font-family: 'Montserrat'
+        font-size: 22px
+        line-height: 34px
+
+      &__rent
+        z-index: 2
+        grid-area: 4 / 1 / 4 / -1
+        padding: 0
+        margin: 0
+        margin-bottom: 100px
+
+        &__rent-btn
+          padding: 0
+          margin: 0
+          padding: 16px 32px
+          width: 204px
+          height: 52px
+          font-family: 'Montserrat-Medium'
+          font-size: 16px
+          line-height: 20px
+          color: #FFF
+          background-color: #06A9B3
+          text-decoration: none
+          transition: background 0.15s ease-in-out
+
+          &:hover
+            background-color: #068d94
+          
+    &__social
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      z-index: 2
+      grid-area: 5 / 1 / 5 / 5
+      padding: 0
+      margin: 10px 0 100px 0
+
+      &__item
+        padding: 0
+        margin: 0
+        margin-right: 73px
+        list-style: none
+
+        &__link
+          display: block
+          width: 44px
+          height: 44px
+          transition: all 0.15s ease-in-out
+        
+          &__btn-facebook
+            background-image: url('../img/icons/facebook.svg')
+            background-repeat: no-repeat
+            background-position: center
+
+            &:hover
+              background-image: url('../img/icons/facebook-filled.svg')
+
+          &__btn-instagram
+            @extend .page-main__overwiev__content__social__item__link__btn-facebook
+            background-image: url('../img/icons/instagram.svg')
+
+            &:hover
+              background-image: url('../img/icons/instagram-filled.svg')
+
+          &__btn-vkontakte
+            @extend .page-main__overwiev__content__social__item__link__btn-facebook
+            background-image: url('../img/icons/vkontakte.svg')
+
+            &:hover
+              background-image: url('../img/icons/vkontakte-filled.svg')
+
+    &__slider
+      grid-area: 1 / 6 / 1 / -1
+      display: grid
+      column-gap: 24px
+      grid-template-columns: repeat(6, 1fr)
+      grid-template-rows: repeat(5, auto)
+      width: 795px
+      height: 496px
+      
+      &__wrapper
+        grid-area: 1 / 1 / -1 / -1
+        
+      &__controls
+        grid-area: 4 / 1 / -1 / -1
+        display: grid
+        grid-template-columns: auto auto 1fr
+        margin-bottom: 10.5px
+
+      &__leftArrow
+        z-index: 3
+        border: none
+        border-radius: 0px
+        width: 105px
+        height: 64px
+        padding: 0
+        margin: 0
+        background-color: #FFFFFF
+        background-image: url('../img/icons/slider-arrow-filled.svg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 30px 16px
+        outline: none
+        transition: background 0.15s ease-in-out
+        cursor: pointer
+
+        &:hover
+          background-color: #333
+
+        &__disabled
+          @extend .page-main__overwiev__content__slider__leftArrow
+          background-image: url('../img/icons/slider-arrow.svg')
+
+          &:hover
+            background-color: #fff
+
+      &__rightArrow
+        @extend .page-main__overwiev__content__slider__leftArrow
+        background-image: url('../img/icons/slider-arrow-filled.svg')
+        transform: rotate(180deg)
+
+        &__disabled
+          @extend .page-main__overwiev__content__slider__leftArrow
+          background-image: url('../img/icons/slider-arrow.svg')
+          transform: rotate(180deg)
+
+          &:hover
+            background-color: #fff
+
+      &__info
+        z-index: 3
+        font-family: 'Montserrat'
+        font-size: 32px
+        line-height: 48px
+        color: #FFF
+        margin: 10px 30px 0 0
+        text-align: right

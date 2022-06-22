@@ -1,0 +1,82 @@
+$headerBackgroundColor: #F2F8FB
+$linkColor: #06A9B3
+
+.page-header
+  grid-area: header
+  background-color: $headerBackgroundColor
+  font-family: 'Montserrat'
+
+.page-nav
+  display: grid
+  grid-template-columns: auto 1fr auto auto
+
+  &__main-nav
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    list-style: none
+    padding: 0
+
+    &__item
+      margin-right: 64px
+      
+      &__link
+        text-decoration: none
+        color: $linkColor
+        font-style: normal
+        line-height: 20px
+
+      &:last-of-type
+        margin-right: 0
+
+      &:hover
+        text-decoration: underline #06A9B3
+
+  &__logo
+    width: 97px
+    height: 30px
+    padding: 20px 0 30px 260px
+
+  &__search
+    position: relative
+    margin-right: 64px
+    
+    &__search-field
+      border: none
+      outline: none
+      padding: 0
+      margin: 0
+      height: 0
+      width: 0
+      background-color: #F2F8FB
+
+    &__icon:before
+      content: ''
+      position: absolute
+      width: 16px
+      height: 16px
+      top: 32px
+      background-image: url("../img/icons/search.svg")
+      transition: all 0.25s linear
+
+    &__icon:hover::before
+      background-image: url("../img/icons/search-darken.svg")
+      cursor: pointer
+      transform: scale(1.2)
+
+  &__user-nav
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    font-style: normal
+    color: #333333
+    line-height: 20px
+
+    &__link
+      text-decoration: none
+      line-height: 20px
+      font-style: normal
+      color: $linkColor
+
+      &:hover
+        text-decoration: underline

@@ -1,0 +1,116 @@
+.page-main__place
+  background-color: #FFF
+  padding-top: 100px
+  padding-bottom: 100px
+
+  &__content
+   position: relative
+   display: grid
+   grid-template-columns: repeat(12, 1fr)
+   column-gap: 24px
+   margin: 0
+   padding: 0
+
+   &:before
+    content: '01'
+    font-family: 'Montserrat-Bold'
+    font-size: 64px
+    line-height: 64px
+    color: #EAF2F6
+    position: absolute
+    width: 69px
+    height: 64px
+    top: 0
+    left: 145px
+
+   &__container
+     display: grid
+     grid-template-columns: repeat(12, 1fr)
+     grid-gap: 24px
+     grid-column: 1 / -1
+     margin: 0
+     padding: 0
+
+     &:after
+       content: 'Место'
+       font-family: 'Montserrat-Bold'
+       position: absolute
+       font-size: 64px
+       line-height: 64px
+       color: #EAF2F6
+       width: 64px
+       height: 216px
+       top: 60px
+       left: 145px
+       writing-mode: vertical-lr
+       transform: scale(-1, -1) translateY(-40px)
+
+     &__text
+       grid-column: 5 / 9
+       padding: 0
+       margin: 0
+       color: #333
+       font-family: 'Montserrat-Light'
+       font-wegiht: 300
+       font-size: 16px
+       line-height: 32px
+
+     &__text-right
+       grid-column: 10 / 12
+       padding: 0
+       margin: 0
+       color: #333
+       font-family: 'Montserrat-Light'
+       font-wegiht: 300
+       font-size: 14px
+       line-height: 24px
+
+     &__text-left
+       @extend .page-main__place__content__container__text-right
+       grid-column: 2 / 4
+       line-height: 24px
+
+     &__img-small
+       grid-column: 5 / 9
+       width: 444px
+       height: 280px
+
+     &__img-big
+       grid-column: 2 / 12
+       width: 1146px
+       height: 280px
+
+     &__quote
+       grid-column: 4 / 10
+       color: #333
+       font-family: 'Montserrat'
+       font-size: 22px
+       line-height: 40px
+       padding: 0
+       margin: 0
+       padding-left: 28px
+       border-left: 2px solid #06A9B3
+
+     &__order
+       padding: 0
+       margin: 0
+       grid-column: 5 / 8
+       margin-top: 16px
+
+       &__order-btn
+         padding: 0
+         margin: 0
+         width: 289px
+         height: 52px
+         margin-top: 16px
+         padding: 16px 32px
+         text-decoration: none
+         color: #FFF
+         font-family: 'Montserrat-Medium'
+         font-size: 16px
+         line-height: 20px
+         background-color: #06A9B3
+         transition: background 0.15s ease-in-out
+
+         &:hover
+            background-color: #068d94
